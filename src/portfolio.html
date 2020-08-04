@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    //@include('html/head.html')
+</head>
+<body>
+
+    //@include('html/sprite.html')
+
+    <div class="page">
+
+        <!-- Header -->
+        //@include('html/header.html')
+        
+        <!-- Content -->
+        <div class="content">
+            
+            <div class="container">
+                <div class="content__title">Портфолио</div>
+
+                <div class="portfolio">
+
+                    <button class="portfolio__arrow portfolio__arrow--prev" id="portfolio-arrow-prev" type="button">
+                        <svg class="portfolio__arrow-icon">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </button>
+
+                    <button class="portfolio__arrow portfolio__arrow--next" id="portfolio-arrow-next" type="button">
+                        <svg class="portfolio__arrow-icon">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </button>
+
+                    <div class="portfolio__slider" id="portfolio">
+
+                       <div>
+                            <div class="portfolio__item">
+                                <a class="portfolio__link" href="#" target="_blank">
+                                    <img class="portfolio__img" src="img/portfolio/1.jpg" alt="">
+                                </a>
+                                <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="portfolio__item">
+                                <a class="portfolio__link" href="#" target="_blank">
+                                    <img class="portfolio__img" src="img/portfolio/2.jpg" alt="">
+                                </a>
+                                <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="portfolio__item">
+                                <a class="portfolio__link" href="#" target="_blank">
+                                    <img class="portfolio__img" src="img/portfolio/1.jpg" alt="">
+                                </a>
+                                <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="portfolio__item">
+                                <a class="portfolio__link" href="#" target="_blank">
+                                    <img class="portfolio__img" src="img/portfolio/2.jpg" alt="">
+                                </a>
+                                <div class="portfolio__title">Сайт проекта CarTuning.pro</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div> <!-- /.portfolio -->
+            </div> <!-- /.container -->
+
+        </div> <!-- /.content -->
+
+
+
+        <!-- Footer -->
+        //@include('html/footer.html')
+    </div>
+
+    //@include('html/modal.html')
+    
+
+    <script src="js/app.min.js"></script>
+
+</body>
+</html>
