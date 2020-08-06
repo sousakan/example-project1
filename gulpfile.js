@@ -10,6 +10,7 @@ const cleanCSS = require('gulp-clean-css')
 const fileinclude = require('gulp-file-include') //удобно использовать для html файлов
 const newer = require('gulp-newer')
 const imagemin = require('gulp-imagemin')
+const panini = require('panini')
 
 let source_folder = 'src'
 let build_folder = 'dest'
@@ -55,8 +56,16 @@ function browsersync()
 
 function html()
 {
-    return src(path.src.html)
-    .pipe(fileinclude({ prefix: '//@' }))
+    panini.refresh()
+    src(path.src.html)
+    .pipe(panini
+    ({
+      root: 'src/',
+      layouts: 'src/templates/layouts/',
+      partials: 'src/templates/partials/',
+      helpers: 'src/templates/helpers/',
+      data: 'src/templates/data/'
+    }))
     .pipe(dest(path.dest.html))
     .pipe(browserSync.stream())
 }

@@ -23,7 +23,8 @@
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-optipng": "^8.0.0",
-    "imagemin-svgo": "^8.0.0"
+    "imagemin-svgo": "^8.0.0",
+    "panini": "^1.7.1"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
